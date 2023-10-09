@@ -1,0 +1,54 @@
+﻿/* CSS */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 20px;
+    position: relative;
+}
+
+.filled {
+    height: 100%;
+    background-color: #3498db;
+    width: 0; /* Initial state */
+    position: absolute;
+    transition: width 2s;
+}
+
+.parallax {
+    /* Adjust these values as needed */
+    height: 800px;
+    background-image: url('Images/parallax-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+#quiz button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#quiz button:hover {
+    background-color: #2980b9;
+}
