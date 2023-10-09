@@ -1,10 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-        <link rel="styles" href="styles.css">
-        <script src="scripts.js" defer></script>
-    
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clark Ohlenbusch - Personal Website</title>
@@ -15,18 +12,51 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #0C2D48; /* Dark Blue */
+            color: white; /* Text Color */
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #0C2D48; /* Midnight Blue */
             text-align: center;
             padding: 1em 0;
         }
 
         section {
             padding: 2em;
+        }
+
+        section#about-me,
+        section#portfolio {
+            background-color: #0C2D48; /* Blue */
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        section#skills,
+        section#contact {
+            background-color: #B1D4E0; /* Baby Blue */
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #145DA0; /* Midnight Blue */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .filled {
+            background-color: #145DA0; /* Midnight Blue */
+            border-radius: 5px;
+            height: 20px;
         }
     </style>
 </head>
@@ -48,12 +78,12 @@
 
     <section id="portfolio">
         <h2>Work Experience/Projects</h2>
-        <p>ALiHLTH LLC intern</p>
+        <h3>ALiHLTH LLC intern</h3>
         <p>Utilized a diverse set of coding languages including SQL, JavaScript, Angular JS, C#, HTML/CSS, Ionic 4, and Node JS to improve and reimagine app functionalities.</p>
         <p>Collaborated with a dynamic team of 4 to drive both backend and frontend development for "IGetBetter" app and website.</p>
         <p>Streamlined the automatic billing process, resulting in a more efficient and user-friendly experience for customers and administrators.</p>
         <br>
-        <p>RedTeaming intern</p>
+        <h3>RedTeaming intern</h3>
         <p>Designed and launched the company's website using WordPress alongside coding skills, resulting in a professional online presence. View at www.redteaming.com</p>
         <p>Introduced to cybersecurity principles and practices, gaining foundational knowledge in protecting digital assets and infrastructures.</p>
     </section>
@@ -111,46 +141,6 @@
     
 
     <h2 id="typing-text"></h2>
-
-    <div id="quiz-container">
-
-    <section id="quiz">
-        <h2>Test Your Knowledge About Me!</h2>
-
-        <div class="quiz-question">
-            <p>What language is used for web apps?</p>
-            <button onclick="checkAnswer('Java')">a) Java</button>
-            <button onclick="checkAnswer('Python')">b) Python</button>
-            <button onclick="checkAnswer('JavaScript')">c) JavaScript</button>
-            <button onclick="checkAnswer('C#')">d) C#</button>
-        </div>
-        
-        <div class="quiz-question">
-            <p>Where do I go to school?</p>
-            <button onclick="checkAnswer('Umass Lowell')">a) Umass Lowell</button>
-            <button onclick="checkAnswer('Umass Boston')">b) Umass Boston</button>
-            <button onclick="checkAnswer('Umass Dartmouth')">c) Umass Dartmouth</button>
-            <button onclick="checkAnswer('Boston College')">d) Boston College</button>
-        </div>
-    
-        <div class="quiz-question">
-            <p>What was my first internship?</p>
-            <button onclick="checkAnswer('RedTeaming')">a) RedTeaming</button>
-            <button onclick="checkAnswer('ALiHLTH')">b) ALiHLTH</button>
-        </div>
-    
-        <div class="quiz-question">
-            <p>What's the best way to reach me?</p>
-            <button onclick="checkAnswer('Messenger bird')">a) Messenger bird</button>
-            <button onclick="checkAnswer('Fax machine')">b) Fax machine</button>
-            <button onclick="checkAnswer('Yelling really loud')">c) Yelling really loud</button>
-            <button onclick="checkAnswer('Text or Call! (781-424-3027)')">d) Text or Call! (781-424-3027)</button>
-        </div>
-    
-        <p id="feedback"></p>
-    </section>
-
-    </div>
 
 
     <section id="contact">

@@ -18,6 +18,13 @@
     transition: width 2s;
 }
 
+.skill p {
+    color: #0C2D48;
+}
+#skills h2 {
+    color: #0C2D48;
+}
+
 .parallax {
     /* Adjust these values as needed */
     height: 800px;
@@ -30,25 +37,5 @@
 
 .parallax-content {
     padding: 50px;
-    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
-}
-
-.quiz-question {
-    margin-bottom: 20px;
-}
-
-#quiz button {
-    display: block;
-    margin: 10px 0;
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#quiz button:hover {
-    background-color: #2980b9;
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent black/grey */
 }
