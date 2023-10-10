@@ -25,6 +25,14 @@ body {
     transition: width 2s;
 }
 
+#contact p {
+    color: #0C2D48
+}
+
+#contact h2 {
+    color: #0C2D48
+}
+
 .skill p {
     color: #0C2D48;
 }
