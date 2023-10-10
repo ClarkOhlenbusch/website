@@ -1,4 +1,11 @@
-﻿/* CSS */
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Skills Section */
 .skill {
     margin-bottom: 20px;
 }
@@ -21,12 +28,13 @@
 .skill p {
     color: #0C2D48;
 }
+
 #skills h2 {
     color: #0C2D48;
 }
 
+/* Parallax Section */
 .parallax {
-    /* Adjust these values as needed */
     height: 800px;
     background-image: url('Images/parallax-bg.jpg');
     background-attachment: fixed;
@@ -38,4 +46,24 @@
 .parallax-content {
     padding: 50px;
     background: rgba(0, 0, 0, 0.7); /* semi-transparent black/grey */
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .parallax {
+        height: auto; /* Adjust the height for mobile */
+    }
+
+    .parallax-content {
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    #skills h2 {
+        font-size: 1.5em; /* Adjust font size for mobile */
+    }
+
+    .skill {
+        width: 100%; /* Make skill blocks full width on mobile */
+        display: block;
+    }
 }
